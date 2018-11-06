@@ -3,14 +3,27 @@ package cosasVarias;
 public abstract class Unidad {
 	
 	private int vida;
+	private int costo;
 	
-	public Unidad(int vidaRecibida) {
+	public Unidad(int vidaRecibida, int costoRecibido) {
 		this.vida= vidaRecibida;
+		this.costo= costoRecibido;
 	}
 	
-	
-	public static void main(String[] args) {
-		System.out.println("Hasta acá llegue correctamente");
+	public int getVida() {
+		return this.vida;
 	}
-
+	
+	public int getCosto() {
+		return this.costo;
+	}
+	
+	public void setVida(int nuevaVida) {
+		this.setVida(nuevaVida);
+	}
+	
+	public void setCosto(int nuevoCosto) {
+		this.costo= nuevoCosto;
+	}
+	
 }
